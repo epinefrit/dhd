@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+@font-face{font-family:'Comfortaa';src:url('/media/Comfortaa-Regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
+
+body {
+	background-color: black;
+	margin: 15px;
+}
+
+h1 {
+	margin: auto;
+	color: #fff;
+	font-family:'Comfortaa', arial;
+	font-size: 250%;
+}
+
+#hello {
+	position: fixed;
+	top: 47vh;
+	left: 47vw;
+}
