@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 @font-face{font-family:'Comfortaa';src:url('/media/Comfortaa-Regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
 
+a {
+	cursor: pointer;
+}
+
 body {
 	background-color: black;
 	margin: 15px;
@@ -13,8 +17,52 @@ h1 {
 	font-size: 250%;
 }
 
+nav a {
+	float: right;
+	color: #fff;
+	font-family:'Comfortaa', arial;
+	font-size: 150%;
+	margin-left: 25px;
+	position: relative;
+	top: 3vh;
+	right: 2vw;
+}
+
 #hello {
-	position: fixed;
-	top: 47vh;
+	position: absolute;
+	top: 45vh;
 	left: 47vw;
+}
+
+.fullscreen-bg{
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	z-index:-100;
+	}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
 }
